@@ -48,10 +48,13 @@ additional space**.
 
 - `WhoIsTheClosest5` evolves over the last implementation by saving the answers for each query in an array, so
 that repeated queries are solved in O(1) time at the cost of adding O(n) space. It adds some advantages with
-little overhead, not even changing big O values. Overall it runs in **O(n + m * log k) time** and **O(n) additional space**.
+little overhead, not even changing big O values. Overall it runs in **O(n + m * log k) time** and **O(n) additional
+space**.
 
-- `WhoIsTheClosest6` is a linear solution, using the hash map solution, but solving the closest characters in one pass 
-..., running in **O(n + m) time** and **O(n) additional space**.
+- `WhoIsTheClosest6` is a linear solution, using the hash map solution, but solving the closest characters in a single
+pass even solving for indexes that may not be queried. This is achieved by iterating over the mapped out indexes for
+each character and deciding for each if the right or left one is the closest and saving it to an array. This solution
+runs in **O(n + m) time** and **O(n) additional space**.
 
 # Tests
 
