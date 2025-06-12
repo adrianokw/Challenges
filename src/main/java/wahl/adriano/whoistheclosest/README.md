@@ -24,7 +24,7 @@ repetition of the character in `s[query]`.
 
 # Implementations
 
-I wrote an interface to the solution of this problem and implemented it in 6 classes numbered from 0 to 5 (from
+I wrote an interface to the solution of this problem and implemented it in 7 classes numbered from 0 to 6 (from
 theoretical slowest to fastest). Asymptotic analysis done with Big O. Time complexity was done by average case analysis.
 
 The solutions are as follows:
